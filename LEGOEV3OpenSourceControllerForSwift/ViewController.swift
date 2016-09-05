@@ -100,51 +100,51 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             switch indexPath.row {
             case 0:
                 cell.portLabel!.text = "PORTA"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPortA!.typeString)
+                cell.imageView!.image = device!.sensorPortA!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA!.data)
                 break
             case 1:
                 cell.portLabel!.text = "PORTB"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPortB!.typeString)
+                cell.imageView!.image = device!.sensorPortB!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortB!.data)
                 break
             case 2:
                 cell.portLabel!.text = "PORTC"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPortC!.typeString)
+                cell.imageView!.image = device!.sensorPortC!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortC!.data)
                 break
             case 3:
                 cell.portLabel!.text = "PORTD"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPortD!.typeString)
+                cell.imageView!.image = device!.sensorPortD!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortD!.data)
                 break
             case 4:
                 cell.portLabel!.text = "PORT1"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPort1!.typeString)
+                cell.imageView!.image = device!.sensorPort1!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPort1!.data)
                 break
             case 5:
                 cell.portLabel!.text = "PORT2"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPort2!.typeString)
+                cell.imageView!.image = device!.sensorPort2!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPort2!.data)
                 break
             case 6:
                 cell.portLabel!.text = "PORT3"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPort3!.typeString)
+                cell.imageView!.image = device!.sensorPort3!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPort3!.data)
                 break
             case 7:
                 cell.portLabel!.text = "PORT4"
-                cell.nameLabel!.text = device!.sensorPortA.typeString
-                cell.imageView!.image = device!.sensorPortA.image
-                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPortA.data)
+                cell.nameLabel!.text = String(device!.sensorPort4!.typeString)
+                cell.imageView!.image = device!.sensorPort4!.image
+                cell.dataLabel!.text = "Raw Data:"+String(device!.sensorPort4!.data)
                 break
             default:
                 break

@@ -98,12 +98,12 @@ class EV3WifiBrowserViewController: UIViewController,UITableViewDelegate,UITable
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         let count:Int?
-        if ev3WifiManager?.devices.count == nil {
+        if ev3WifiManager?.devices!.count == nil {
             count = 0
         }
         else
         {
-            count = ev3WifiManager?.devices.count
+            count = ev3WifiManager?.devices!.count
         }
         return count! + 1
     }
@@ -115,11 +115,11 @@ class EV3WifiBrowserViewController: UIViewController,UITableViewDelegate,UITable
             cell = UITableViewCell.init(style:.Subtitle, reuseIdentifier: "Cells")
         }
 
-        if indexPath.row < ev3WifiManager?.devices.count {
-            let device:EV3Device = ((self.ev3WifiManager?.devices.allValues)! as NSArray).objectAtIndex(indexPath.row) as! EV3Device
-            cell!.textLabel?.text = device.address
+        if indexPath.row < ev3WifiManager?.devices!.count {
+            let device:EV3Device = ((self.ev3WifiManager?.devices!.allValues)! as NSArray).objectAtIndex(indexPath.row) as! EV3Device
+            cell!.textLabel?.text = String(device._address)
             cell!.accessoryView = nil
-            if device.isConnected == true {
+            if device._isConnected == true {
                 cell!.accessoryType = .Checkmark
             }
             else
@@ -140,17 +140,17 @@ class EV3WifiBrowserViewController: UIViewController,UITableViewDelegate,UITable
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if ev3WifiManager?.devices.count != nil {
-            let device:EV3Device = ((self.ev3WifiManager?.devices.allValues)! as NSArray).objectAtIndex(indexPath.row) as! EV3Device
-            NSLog("device ip:%@",device.address)
+        if ev3WifiManager?.devices!.count != nil {
+            let device:EV3Device = ((self.ev3WifiManager?.devices!.allValues)! as NSArray).objectAtIndex(indexPath.row) as! EV3Device
+            print("device ip:\(device._address)")
             update()
-            if device.isConnected == false {
+            if device._isConnected == false {
                 ev3WifiManager?.connectTCPSocketWithDevice(device)
             }
             else
             {
                 let alertView:UIAlertView = UIAlertView.init(title: "Alert", message: "Do you want to disconnect?", delegate: self, cancelButtonTitle: "Cancel", otherButtonTitles: "OK", "")
-                alertView.tag = Int(device.tag)
+                alertView.tag = Int(device._tag!)
                 alertView.show()
             }
         }
@@ -159,12 +159,12 @@ class EV3WifiBrowserViewController: UIViewController,UITableViewDelegate,UITable
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex == 1 {
             var device:EV3Device?
-            for aDevice in (ev3WifiManager?.devices.allValues)! {
+            for aDevice in (ev3WifiManager?.devices!.allValues)! {
                 if aDevice.tag == alertView.tag {
                     device = aDevice as? EV3Device
                 }
             }
-            ev3WifiManager?.disconnectTCPSocketWithDevice(device)
+            ev3WifiManager?.disconnectTCPSocketWithDevice(device!)
         }
     }
 
@@ -175,7 +175,7 @@ class EV3WifiBrowserViewController: UIViewController,UITableViewDelegate,UITable
     func ev3DeviceConnected(notification:NSNotification)
     {
         let device:EV3Device = notification.object as! EV3Device
-        let cell:UITableViewCell = (tableView?.cellForRowAtIndexPath(NSIndexPath.init(forRow: Int(device.tag), inSection: 0)))!
+        let cell:UITableViewCell = (tableView?.cellForRowAtIndexPath(NSIndexPath.init(forRow: Int(device._tag!), inSection: 0)))!
         cell.accessoryType = .Checkmark
         update()
         doneButton?.enabled = true

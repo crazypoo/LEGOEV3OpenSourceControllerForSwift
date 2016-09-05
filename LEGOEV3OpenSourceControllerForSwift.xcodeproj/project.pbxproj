@@ -9,16 +9,12 @@
 /* Begin PBXBuildFile section */
 		C0A0D0451D7D30F4004CEA7B /* PPortInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0D0441D7D30F4004CEA7B /* PPortInfoTableViewCell.swift */; };
 		C0A0D0471D7D33D1004CEA7B /* PControlRobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0D0461D7D33D1004CEA7B /* PControlRobotViewController.swift */; };
-		C0A0D0581D7D6988004CEA7B /* EV3Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A0D0551D7D6988004CEA7B /* EV3Sensor.m */; };
-		C0A0D0591D7D6988004CEA7B /* EV3WifiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A0D0571D7D6988004CEA7B /* EV3WifiManager.m */; };
 		C0A0D05B1D7D69E0004CEA7B /* EV3WifiBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0D05A1D7D69E0004CEA7B /* EV3WifiBrowserViewController.swift */; };
 		C0F87EFB1D7D00BC00BA4EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F87EFA1D7D00BC00BA4EE9 /* AppDelegate.swift */; };
 		C0F87EFD1D7D00BC00BA4EE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F87EFC1D7D00BC00BA4EE9 /* ViewController.swift */; };
 		C0F87F001D7D00BC00BA4EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F87EFE1D7D00BC00BA4EE9 /* Main.storyboard */; };
 		C0F87F021D7D00BC00BA4EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F87F011D7D00BC00BA4EE9 /* Assets.xcassets */; };
 		C0F87F051D7D00BC00BA4EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F87F031D7D00BC00BA4EE9 /* LaunchScreen.storyboard */; };
-		C0F87F2D1D7D011C00BA4EE9 /* EV3Device.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F87F131D7D011C00BA4EE9 /* EV3Device.m */; };
-		C0F87F2E1D7D011C00BA4EE9 /* EV3DirectCommander.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F87F151D7D011C00BA4EE9 /* EV3DirectCommander.m */; };
 		C0F87F321D7D011C00BA4EE9 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F87F1E1D7D011C00BA4EE9 /* GCDAsyncSocket.m */; };
 		C0F87F331D7D011C00BA4EE9 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F87F201D7D011C00BA4EE9 /* GCDAsyncUdpSocket.m */; };
 		C0F87F341D7D011C00BA4EE9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C0F87F211D7D011C00BA4EE9 /* README.md */; };
@@ -61,16 +57,16 @@
 		C0F87F771D7D040500BA4EE9 /* dPad-UpRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F87F5D1D7D040500BA4EE9 /* dPad-UpRight@2x.png */; };
 		C0F87F791D7D09C900BA4EE9 /* PButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F87F781D7D09C900BA4EE9 /* PButton.swift */; };
 		C0F87F7B1D7D114000BA4EE9 /* PDPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F87F7A1D7D114000BA4EE9 /* PDPad.swift */; };
+		CCD6D46B1D7D9DC600CA45BF /* EV3DirectCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6D46A1D7D9DC600CA45BF /* EV3DirectCommander.swift */; };
+		CCD6D46D1D7D9E8800CA45BF /* EV3CommandDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6D46C1D7D9E8800CA45BF /* EV3CommandDefinitions.swift */; };
+		CCD6D46F1D7DA31600CA45BF /* EV3Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6D46E1D7DA31600CA45BF /* EV3Sensor.swift */; };
+		CCD6D4711D7DA32800CA45BF /* EV3WifiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6D4701D7DA32800CA45BF /* EV3WifiManager.swift */; };
+		CCD6D4731D7DA33600CA45BF /* EV3Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6D4721D7DA33600CA45BF /* EV3Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0A0D0441D7D30F4004CEA7B /* PPortInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPortInfoTableViewCell.swift; sourceTree = "<group>"; };
 		C0A0D0461D7D33D1004CEA7B /* PControlRobotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PControlRobotViewController.swift; sourceTree = "<group>"; };
-		C0A0D0531D7D6988004CEA7B /* EV3CommandDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3CommandDefinitions.h; sourceTree = "<group>"; };
-		C0A0D0541D7D6988004CEA7B /* EV3Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3Sensor.h; sourceTree = "<group>"; };
-		C0A0D0551D7D6988004CEA7B /* EV3Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3Sensor.m; sourceTree = "<group>"; };
-		C0A0D0561D7D6988004CEA7B /* EV3WifiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3WifiManager.h; sourceTree = "<group>"; };
-		C0A0D0571D7D6988004CEA7B /* EV3WifiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3WifiManager.m; sourceTree = "<group>"; };
 		C0A0D05A1D7D69E0004CEA7B /* EV3WifiBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EV3WifiBrowserViewController.swift; sourceTree = "<group>"; };
 		C0F87EF71D7D00BC00BA4EE9 /* LEGOEV3OpenSourceControllerForSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEGOEV3OpenSourceControllerForSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F87EFA1D7D00BC00BA4EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,11 +76,6 @@
 		C0F87F041D7D00BC00BA4EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0F87F061D7D00BC00BA4EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0F87F0C1D7D00EC00BA4EE9 /* LEGOEV3OpenSourceControllerForSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LEGOEV3OpenSourceControllerForSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		C0F87F121D7D011C00BA4EE9 /* EV3Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3Device.h; sourceTree = "<group>"; };
-		C0F87F131D7D011C00BA4EE9 /* EV3Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3Device.m; sourceTree = "<group>"; };
-		C0F87F141D7D011C00BA4EE9 /* EV3DirectCommander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3DirectCommander.h; sourceTree = "<group>"; };
-		C0F87F151D7D011C00BA4EE9 /* EV3DirectCommander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3DirectCommander.m; sourceTree = "<group>"; };
-		C0F87F161D7D011C00BA4EE9 /* EV3MessageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3MessageType.h; sourceTree = "<group>"; };
 		C0F87F1D1D7D011C00BA4EE9 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		C0F87F1E1D7D011C00BA4EE9 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		C0F87F1F1D7D011C00BA4EE9 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
@@ -129,6 +120,11 @@
 		C0F87F5D1D7D040500BA4EE9 /* dPad-UpRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpRight@2x.png"; sourceTree = "<group>"; };
 		C0F87F781D7D09C900BA4EE9 /* PButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PButton.swift; sourceTree = "<group>"; };
 		C0F87F7A1D7D114000BA4EE9 /* PDPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDPad.swift; sourceTree = "<group>"; };
+		CCD6D46A1D7D9DC600CA45BF /* EV3DirectCommander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EV3DirectCommander.swift; sourceTree = "<group>"; };
+		CCD6D46C1D7D9E8800CA45BF /* EV3CommandDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EV3CommandDefinitions.swift; sourceTree = "<group>"; };
+		CCD6D46E1D7DA31600CA45BF /* EV3Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EV3Sensor.swift; sourceTree = "<group>"; };
+		CCD6D4701D7DA32800CA45BF /* EV3WifiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EV3WifiManager.swift; sourceTree = "<group>"; };
+		CCD6D4721D7DA33600CA45BF /* EV3Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EV3Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,16 +183,11 @@
 		C0F87F101D7D011C00BA4EE9 /* LEGOEV3 */ = {
 			isa = PBXGroup;
 			children = (
-				C0A0D0531D7D6988004CEA7B /* EV3CommandDefinitions.h */,
-				C0A0D0541D7D6988004CEA7B /* EV3Sensor.h */,
-				C0A0D0551D7D6988004CEA7B /* EV3Sensor.m */,
-				C0A0D0561D7D6988004CEA7B /* EV3WifiManager.h */,
-				C0A0D0571D7D6988004CEA7B /* EV3WifiManager.m */,
-				C0F87F121D7D011C00BA4EE9 /* EV3Device.h */,
-				C0F87F131D7D011C00BA4EE9 /* EV3Device.m */,
-				C0F87F141D7D011C00BA4EE9 /* EV3DirectCommander.h */,
-				C0F87F151D7D011C00BA4EE9 /* EV3DirectCommander.m */,
-				C0F87F161D7D011C00BA4EE9 /* EV3MessageType.h */,
+				CCD6D46C1D7D9E8800CA45BF /* EV3CommandDefinitions.swift */,
+				CCD6D46E1D7DA31600CA45BF /* EV3Sensor.swift */,
+				CCD6D4701D7DA32800CA45BF /* EV3WifiManager.swift */,
+				CCD6D4721D7DA33600CA45BF /* EV3Device.swift */,
+				CCD6D46A1D7D9DC600CA45BF /* EV3DirectCommander.swift */,
 				C0F87F1D1D7D011C00BA4EE9 /* GCDAsyncSocket.h */,
 				C0F87F1E1D7D011C00BA4EE9 /* GCDAsyncSocket.m */,
 				C0F87F1F1D7D011C00BA4EE9 /* GCDAsyncUdpSocket.h */,
@@ -379,18 +370,19 @@
 			files = (
 				C0F87F791D7D09C900BA4EE9 /* PButton.swift in Sources */,
 				C0A0D05B1D7D69E0004CEA7B /* EV3WifiBrowserViewController.swift in Sources */,
+				CCD6D46F1D7DA31600CA45BF /* EV3Sensor.swift in Sources */,
+				CCD6D46B1D7D9DC600CA45BF /* EV3DirectCommander.swift in Sources */,
+				CCD6D4711D7DA32800CA45BF /* EV3WifiManager.swift in Sources */,
+				CCD6D46D1D7D9E8800CA45BF /* EV3CommandDefinitions.swift in Sources */,
 				C0A0D0451D7D30F4004CEA7B /* PPortInfoTableViewCell.swift in Sources */,
 				C0F87F321D7D011C00BA4EE9 /* GCDAsyncSocket.m in Sources */,
 				C0F87F421D7D020A00BA4EE9 /* PAnalogueStick.swift in Sources */,
 				C0F87F7B1D7D114000BA4EE9 /* PDPad.swift in Sources */,
-				C0A0D0591D7D6988004CEA7B /* EV3WifiManager.m in Sources */,
 				C0F87F331D7D011C00BA4EE9 /* GCDAsyncUdpSocket.m in Sources */,
+				CCD6D4731D7DA33600CA45BF /* EV3Device.swift in Sources */,
 				C0F87F341D7D011C00BA4EE9 /* README.md in Sources */,
 				C0A0D0471D7D33D1004CEA7B /* PControlRobotViewController.swift in Sources */,
-				C0F87F2D1D7D011C00BA4EE9 /* EV3Device.m in Sources */,
 				C0F87EFD1D7D00BC00BA4EE9 /* ViewController.swift in Sources */,
-				C0A0D0581D7D6988004CEA7B /* EV3Sensor.m in Sources */,
-				C0F87F2E1D7D011C00BA4EE9 /* EV3DirectCommander.m in Sources */,
 				C0F87EFB1D7D00BC00BA4EE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -58,61 +58,61 @@ class PControlRobotViewController: UIViewController,PDPadDelegate,PButtonDelegat
     func dPad(dpad: PDPad, direction: PDPadDirection) {
         if (stringForDirection(direction).isEqualToString("Up")) {
             NSLog("我按了上按钮")
-            devicData?.turnMotorAtPort(EV3OutputPortB, power:-100)
-            devicData?.turnMotorAtPort(EV3OutputPortC, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.B, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.C, power:-100)
         }
         else if (stringForDirection(direction).isEqualToString("Down"))
         {
             NSLog("下按钮");
-            devicData?.turnMotorAtPort(EV3OutputPortB, power:100)
-            devicData?.turnMotorAtPort(EV3OutputPortC, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.B, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.C, power:100)
         }
         else if (stringForDirection(direction).isEqualToString("Left"))
         {
             NSLog("左按钮");
-            devicData?.turnMotorAtPort(EV3OutputPortA, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.A, power:-100)
         }
         else if (stringForDirection(direction).isEqualToString("Right"))
         {
             NSLog("右按钮");
-            devicData?.turnMotorAtPort(EV3OutputPortA, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.A, power:100)
         }
         else if (stringForDirection(direction).isEqualToString("Up Left"))
         {
             NSLog("上左按钮");
-            devicData?.turnMotorAtPort(EV3OutputPortA, power:-100)
-            devicData?.turnMotorAtPort(EV3OutputPortB, power:-100)
-            devicData?.turnMotorAtPort(EV3OutputPortC, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.A, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.B, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.C, power:-100)
         }
         else if (stringForDirection(direction).isEqualToString("Up Right"))
         {
             NSLog("上右按钮");
-            devicData?.turnMotorAtPort(EV3OutputPortA, power:100)
-            devicData?.turnMotorAtPort(EV3OutputPortB, power:-100)
-            devicData?.turnMotorAtPort(EV3OutputPortC, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.A, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.B, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.C, power:-100)
 
         }
         else if (stringForDirection(direction).isEqualToString("Down Left"))
         {
             NSLog("下左按钮");
-            devicData?.turnMotorAtPort(EV3OutputPortA, power:-100)
-            devicData?.turnMotorAtPort(EV3OutputPortB, power:100)
-            devicData?.turnMotorAtPort(EV3OutputPortC, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.A, power:-100)
+            devicData?.turnMotorAtPort(EV3OutputPort.B, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.C, power:100)
 
         }
         else if (stringForDirection(direction).isEqualToString("Down Right"))
         {
             NSLog("下右按钮");
-            devicData?.turnMotorAtPort(EV3OutputPortA, power:100)
-            devicData?.turnMotorAtPort(EV3OutputPortB, power:100)
-            devicData?.turnMotorAtPort(EV3OutputPortC, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.A, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.B, power:100)
+            devicData?.turnMotorAtPort(EV3OutputPort.C, power:100)
         }
     }
 
     func dPadDidReleaseDirection(dPad: PDPad) {
-        devicData?.turnMotorAtPort(EV3OutputPortA, power:0)
-        devicData?.turnMotorAtPort(EV3OutputPortB, power:0)
-        devicData?.turnMotorAtPort(EV3OutputPortC, power:0)
+        devicData?.turnMotorAtPort(EV3OutputPort.A, power:0)
+        devicData?.turnMotorAtPort(EV3OutputPort.B, power:0)
+        devicData?.turnMotorAtPort(EV3OutputPort.C, power:0)
 
     }
 
@@ -123,7 +123,7 @@ class PControlRobotViewController: UIViewController,PDPadDelegate,PButtonDelegat
         else if (button.isEqual(bButton))
         {
             NSLog("BBBBB")
-            devicData?.stopMotorAtPort(EV3OutputAll)
+            devicData?.stopMotorAtPort(EV3OutputPort.EV3OutputAll)
         }
     }
 
@@ -134,9 +134,9 @@ class PControlRobotViewController: UIViewController,PDPadDelegate,PButtonDelegat
         else if (button.isEqual(bButton))
         {
             NSLog("BBBBB")
-            devicData?.turnMotorAtPort(EV3OutputPortA, power:0)
-            devicData?.turnMotorAtPort(EV3OutputPortB, power:0)
-            devicData?.turnMotorAtPort(EV3OutputPortC, power:0)
+            devicData?.turnMotorAtPort(EV3OutputPort.A, power:0)
+            devicData?.turnMotorAtPort(EV3OutputPort.B, power:0)
+            devicData?.turnMotorAtPort(EV3OutputPort.C, power:0)
         }
     }
 
